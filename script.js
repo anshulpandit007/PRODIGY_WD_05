@@ -71,4 +71,4 @@ $("#unitBtn").addEventListener("click", () => {
 });
 
 // Default city
-search("Vellore");
+search("Meerut");
