@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weatherly – Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">W</div>
+        <div>
+          <div class="title">Weatherly</div>
+          <div class="subtitle">Simple, fast weather • Task 5</div>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="input">
+          <input id="cityInput" placeholder="Search city (e.g., Vellore)" />
+        </div>
+        <button id="searchBtn" class="btn">Search</button>
+        <button id="locBtn" class="btn ghost">Use my location</button>
+        <button id="unitBtn" class="btn">°C</button>
+      </div>
+    </header>
+
+    <div id="alert" class="card error hidden"></div>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Current Weather</h3>
+        <div id="current" class="current">
+          <div class="left">
+            <div class="place" id="place">—</div>
+            <div class="temp" id="temp">—</div>
+            <div class="meta" id="desc">—</div>
+            <div class="chips" id="chips"></div>
+          </div>
+          <div class="right" id="iconWrap">🙂</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Details</h3>
+        <div class="chips" id="details"></div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <h3>5-Day Forecast</h3>
+      <div id="forecast" class="forecast"></div>
+    </section>
+
+    <footer>
+      Built for Prodigy Infotech • Uses 
+      <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
